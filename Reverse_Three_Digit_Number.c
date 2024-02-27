@@ -13,7 +13,7 @@ int main(void)
   middle_digit = number % 10;   // gives middle digit
   first_digit = number / 10;    // gives first digit
 
-  printf("The reversal is: %d%d%d", last_digit, middle_digit, first_digit);
+  printf("The reversal is: %d%d%d", last_digit, middle_digit, first_digit); // print the reversed number
 
   return 0;
 }
