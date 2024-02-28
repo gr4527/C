@@ -1,1 +1,1 @@
-// Repository of small C programs
+// Repository C programs
