@@ -10,6 +10,7 @@ int main(void)
 
 // Without using sorting algorithm this is one of the ways solving this
 // Not Recommended solution because it is error prone
+// EDITED:
   if(i > j)
   {
     if(i > k)
@@ -27,6 +28,10 @@ int main(void)
   {
     if(j > m)
       largest = j;
+    else if(k > m)
+      largest = k;
+    else
+      largest = m;
   }
   else if(k > m)
     largest = k;
