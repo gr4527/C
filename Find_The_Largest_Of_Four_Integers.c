@@ -9,7 +9,7 @@ int main(void)
   scanf("%d%d%d%d", &i, &j, &k, &m);
 
 // Without using sorting algorithm this is one of the ways solving this
-// Not Recommended solution because it is error prone // hard to go through the probabilities if either comparison for quality check
+// Not Recommended solution because it is error prone
 // EDITED:
   if(i > j)
   {
@@ -17,12 +17,15 @@ int main(void)
     {
       if(i > m)
         largest = i;
-      else if(k > j)
-        if(k > m)
-          largest = k;
-        else
-          largest = m;
+      else if(k > m)
+        largest = k;
+      else
+        largest = m;
     }
+    else if(k > m)
+      largest = k;
+    else
+      largest = m;
   }
   else if(j > k)
   {
